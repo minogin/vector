@@ -11,12 +11,12 @@ console.log('length: ' + c.norm())
 console.log('angle in degrees: ' + Vector.deg(c.angle()))
 ```
 
-## Description
+# Description
 2D-vector operations: addition, subtraction, normalization, rotation etc.
 
 The vectors are immutable and therefore safe to use. Every operation returns new instance.
 
-## Installation
+# Installation
 
 Install with npm
 
@@ -30,9 +30,9 @@ Add the following line to your javascript code
 import Vector from '@minogin/vector'
 ```
 
-## Documentation
+# Documentation
 
-### Constructors
+## Constructors
 
 ### `Vector(x, y)`
 * `x`, `y` {`Number`} - initial vector coordinates
@@ -47,7 +47,7 @@ let a = new Vector(10, 20)
 let b = new Vector(a)       // b = { 10; 20 }
 ```
 
-### Operators and functions
+## Operators and functions
 
 ### `add(v)`
 
@@ -165,7 +165,7 @@ if (v.equals(new Vector(1, 0), 1e-10)) { /*...*/ }     // It is true
 `v.clone()` is identical to `new Vector(v)`
 
 
-### Utilities
+## Utilities
 
 <a name="#rad"></a>
 ### `Vector.rad(degrees)`
@@ -192,6 +192,6 @@ let v = new Vector(Math.sqrt(3)/2, 1/2)
 console.log('Vector is rotated by ' + Math.deg(v.angle()) + ' degrees')
 ````
 
-## License
+# License
 
 [ISC](https://opensource.org/licenses/ISC)
