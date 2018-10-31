@@ -1,6 +1,6 @@
 {
   "name": "@minogin/vector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "2D-vector algebra. Vectors are immutable - every operation returns new instance.",
   "keywords": [
     "vector",
