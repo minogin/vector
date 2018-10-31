@@ -128,7 +128,7 @@ Returns current vector rotated by angle (radians)
 let b = new Vector(1, 0).rotate(Math.PI / 6)     // b = { √3/2; 1/2 }
 ```
 
-**See also:** [`Vector.rad(degrees)`](#rad)
+**See also:** [`Vector.rad(degrees)`](#vectorraddegrees)
 
 ### `angle()`
 
@@ -140,7 +140,7 @@ Computes current vector's angle (to x axis) in radians
 let phi = new Vector(Math.sqrt(3)/2, 1/2).angle()     // phi = Math.PI / 6
 ```
 
-**See also:** [`Vector.deg(radians)`](#deg)
+**See also:** [`Vector.deg(radians)`](#vectordegradians)
 
 ### `equals(v[, precision])`
 
