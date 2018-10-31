@@ -1,0 +1,46 @@
+{
+  "name": "@minogin/vector",
+  "version": "1.0.0",
+  "description": "2D-vector algebra. Vectors are immutable - every operation returns new instance.",
+  "keywords": [
+    "vector",
+    "math"
+  ],
+  "author": {
+    "name": "Andrey Minogin",
+    "email": "minogin@gmail.com"
+  },
+  "license": "ISC",
+  "main": "src/vector.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minogin/vector"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "require": [
+      "@babel/register"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test nyc mocha"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-istanbul": "^5.1.0",
+    "cross-env": "^5.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "chai": "*",
+    "nyc": "^13.1.0"
+  },
+  "dependencies": {}
+}
